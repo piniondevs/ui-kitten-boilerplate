@@ -7,6 +7,12 @@ function Main() {
 
   const themeContext = React.useContext(ThemeContext);
 
+  /* 
+    The themeContext exposes two values namely 'theme' and 'toggleTheme'
+    where the 'theme' just returns what theme the app is running and 
+    'toggleTheme' changes it from light to dark or vice versa.
+  */
+
   return (
     <Layout style={styles.container}>
       <Button onPress={themeContext.toggleTheme}>
